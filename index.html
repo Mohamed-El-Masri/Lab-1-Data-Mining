@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mining Lab 3 - Apriori Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Data Mining Lab 3</h1>
+            <p>Apriori Algorithm Problems</p>
+             <div class="author-name">Mohamed Sameh Ahmed Tayee</div>
+        </div>
+
+        <div class="lab-content active">
+            <h2>Lab 3: Apriori Algorithm</h2>
+            
+            <!-- Problem 1: Grocery Store Example -->
+            <div class="question-card">
+                <h3>Problem 1: Grocery Store Example (Support Threshold s=2)</h3>
+                <p>Given the following transactional database:</p>
+                <div class="formula">
+                    <strong>Transaction Database:</strong><br>
+                    T1: {HotDogs, Buns, Ketchup}<br>
+                    T2: {HotDogs, Buns}<br>
+                    T3: {HotDogs, Coke, Chips}<br>
+                    T4: {Chips, Coke}<br>
+                    T5: {Chips, Ketchup}<br>
+                    T6: {HotDogs, Coke, Chips}
+                </div>
+                <p><strong>Task:</strong> Apply the Apriori algorithm with minimum support threshold s = 2 to find all frequent itemsets.</p>
+                
+                <div class="solution-container">
+                    <button class="toggle-btn" onclick="toggleSolution('aprioriProblem1Solution')">
+                        <span class="btn-text">Show Solution</span>
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="solution-content" id="aprioriProblem1Solution">
+                        <!-- Solution will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Problem 2: 5-Transaction Database -->
+            <div class="question-card">
+                <h3>Problem 2: 5-Transaction Database (Minimum Support 60%)</h3>
+                <p>Given the following transactional database:</p>
+                <div class="formula">
+                    <strong>Transaction Database:</strong><br>
+                    T1: {A, B, D, E, F}<br>
+                    T2: {B, C, D, E, F, G}<br>
+                    T3: {A, D, E, H}<br>
+                    T4: {A, D, F, I, J}<br>
+                    T5: {B, D, E, K}
+                </div>
+                <p><strong>Task:</strong> Apply the Apriori algorithm with minimum support of 60% to find all frequent itemsets.</p>
+                
+                <div class="solution-container">
+                    <button class="toggle-btn" onclick="toggleSolution('aprioriProblem2Solution')">
+                        <span class="btn-text">Show Solution</span>
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="solution-content" id="aprioriProblem2Solution">
+                        <!-- Solution will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Additional Practice Problem -->
+              
+           
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
